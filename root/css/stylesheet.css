@@ -1,3 +1,52 @@
 body {
+	box-sizing: border-box;
+	font-size: 14px;
+	margin: 0%;
 	text-transform: capitalize;
+}
+
+.container {
+	margin: 0px auto;
+	width: 900px;
+}
+
+nav {
+	background-color: #383E4C;
+	text-align: center;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+}
+
+nav li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 10px;
+}
+
+nav a:link {
+	border: 1px solid #646d7c;
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
+nav a:visited {
+	border: 1px solid #646d7c;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #49505F;
+}
+
+footer {
+	padding-bottom: 120px;
+	text-align: center;}
+
+#copy {
+	color: #666;
+	font-size: 12px;
 }
