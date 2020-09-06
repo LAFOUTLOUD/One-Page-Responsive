@@ -1,13 +1,21 @@
 body {
 	box-sizing: border-box;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	margin: 0%;
 	text-transform: capitalize;
 }
 
 .container {
+	/*background-color: red;*/
 	margin: 0px auto;
-	width: 900px;
+	width: 100%;
+}
+
+.column {
+	/*background-color: blue;*/
+	margin: 0px auto;
+	width: 389px;
 }
 
 nav {
@@ -42,11 +50,74 @@ nav a:hover {
 	background-color: #49505F;
 }
 
+#parallax-1 {
+	background-image: url("../img/bg-1.jpg");
+	min-height: 614px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#home {
+	text-align: center;
+}
+
+#home h1 {
+	color: #fff;
+    font-size: 70px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+}
+
+#home h4 {
+	color: #fff;
+    font-size: 25px;
+    text-shadow: 1px 1px #333;
+}
+
+#parallax-2 {
+	background-image: url("../img/bg-2.jpg");
+	min-height: 313px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat; /* w/o this, the image endlessly repeats behind the page */
+	background-size: cover; /* this makes the image cover the entire page behind the scenes */
+}
+
+#parallax-3 {
+	background-image: url("../img/bg-3.jpg");
+	min-height: 438px;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 footer {
 	padding-bottom: 120px;
-	text-align: center;}
+	text-align: center;
+}
+
+footer h1 {
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 500;
+}
+
+#footer-text {
+	color: #999;
+	font-style: italic;
+}
+
+hr {
+	border-top: 1px solid #eee;
+}
 
 #copy {
 	color: #666;
 	font-size: 12px;
+
 }
