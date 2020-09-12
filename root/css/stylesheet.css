@@ -1,9 +1,12 @@
+* {
+	box-sizing: border-box; /* changing the width, padding, margins does not affect the size of the element */
+}
+
 body {
-	box-sizing: border-box;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 14px;
-	margin: 0%;
-	text-transform: capitalize;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px; /* sets the default size for all the text on the page */
+	margin: 0%; /* removes the empty white space from around the webpage */
+	text-transform: capitalize; /* automatically capitalizes every word on the webpage */
 }
 
 .container {
@@ -24,7 +27,7 @@ body {
 	margin: 0px auto;
 }
 
-/***************************************************************************************************/
+/* nav *********************************************************************************************/
 
 nav {
 	background-color: #383E4C;
@@ -63,12 +66,11 @@ nav a:hover {
 	background-image: url("../img/bg-1.jpg");
 	min-height: 614px;
 	background-attachment: fixed;
-	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-/***************************************************************************************************/
+/* homepage ****************************************************************************************/
 
 #header-container {
 	/*background-color: red;*/
@@ -95,14 +97,14 @@ nav a:hover {
     text-shadow: 1px 1px #333;
 }
 
-/***************************************************************************************************/
+/* about us ****************************************************************************************/
 
-#about_us {
-	padding-top: 70px;
+#about-us {
+	padding-top: 70px; /* pushes the about us section down from the homepage section */
 }
 
 
-.about_us_column {
+.about-us-column-1 {
 	box-sizing: border-box;
 	float:left;
 	padding: 0px 15px;
@@ -114,11 +116,11 @@ nav a:hover {
 	padding-bottom: 40px;
 }
 
-.about_us_column h2 {
+.about-us-column-1 h2 {
 	padding: 0px 20px;
 }
 
-.about_us_column p {
+.about-us-column-1 p {
 	padding: 0px 20px 35px;
 }
 
@@ -129,7 +131,7 @@ a:link#grn_button, a:visited#grn_button, a:active#grn_button {
 	border-radius:5px;
 	color:#fff;
 	font-size:18px;
-	margin:20px;
+	margin: 20px;
 	padding-top:10px;
 	padding-right:35px;
 	padding-bottom:10px;
@@ -179,7 +181,46 @@ a:hover#red_button {
 	background-color:#852406;
 }
 
-/***************************************************************************************************/
+#about-us-row-2 {
+	background-color: orange;
+	display: table;
+	margin: 60px auto;
+	width: 1170px;
+}
+
+.about-us-column-2 {
+	box-sizing: border-box;
+	float:left;
+	padding: 0px 15px;
+	width: 50%; /* organizes the columns into 3 columns inside the row */
+}
+
+#about-us-row-2-column-1-content {
+	background-color: #F2F2F2;
+	padding-bottom: 61px;
+}
+
+/* Read More Button */
+
+a:link#read-more-button, a:visited#read-more-button, a:active#read-more-button {
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	border-radius:10px;
+	color:#666;
+	font-size:18px;
+	margin:20px;
+	padding-top:10px;
+	padding-right:30px;
+	padding-bottom:10px;
+	padding-left:30px;
+	text-decoration:none;
+}
+
+a:hover#read-more-button {
+	background-color: #E6E6E6;
+}
+
+/* services ****************************************************************************************/
 
 #parallax-2 {
 	background-image: url("../img/bg-2.jpg");
@@ -190,7 +231,32 @@ a:hover#red_button {
 	background-size: cover; /* this makes the image cover the entire page behind the scenes */
 }
 
-/***************************************************************************************************/
+#services-parallax-container {
+	background-color: red;
+	margin: 0px auto;
+	text-align: center;
+	position: absolute;
+	top: 1815px;
+	width: 100%;
+}
+
+#services h1 {
+	color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #aaa;
+}
+
+#services p {
+	color: #fff;
+    font-size: 18px;
+    margin: 0px;
+    text-shadow: 1px 1px #333;
+}
+
+/* contact *****************************************************************************************/
 
 #parallax-3 {
 	background-image: url("../img/bg-3.jpg");
@@ -201,7 +267,7 @@ a:hover#red_button {
 	background-size: cover;
 }
 
-/***************************************************************************************************/
+/* footer ******************************************************************************************/
 
 footer {
 	padding-bottom: 120px;
@@ -227,4 +293,14 @@ hr {
 	color: #666;
 	font-size: 12px;
 
+}
+
+/* scroll button ***********************************************************************************/
+
+#scroll-to-top {
+	cursor: pointer;
+	display: none;
+	position: fixed; /* fixes the element to the screen */
+	right: 30px; /* the element is fixed to the bottom right of the screen */
+	bottom: 20px; /* the element is fixed to the bottom of the screen */
 }
