@@ -1,16 +1,16 @@
 * {
-	box-sizing: border-box; /* changing the width, padding, margins does not affect the size of the element */
+	box-sizing: border-box;
 }
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px; /* sets the default size for all the text on the page */
-	margin: 0%; /* removes the empty white space from around the webpage */
-	text-transform: capitalize; /* automatically capitalizes every word on the webpage */
+	font-size: 14px;
+	margin: 0%;
+	text-transform: capitalize;
 }
 
 .container {
-/*	background-color: red;*/
+	/*background-color: red;*/
 	margin: 0px auto;
 	width: 100%;
 }
@@ -25,6 +25,10 @@ body {
 .column {
 	/*background-color: blue;*/
 	margin: 0px auto;
+}
+
+::placeholder {
+  color: #000;
 }
 
 /* nav *********************************************************************************************/
@@ -247,7 +251,6 @@ a:hover#read-more-button {
 }
 
 #services-row-2 {
-	background-color: orange;
 	display: table;
 	margin: 0px auto;
 	padding-top: 20px;
@@ -299,22 +302,132 @@ a:hover#read-more-button {
 }
 
 #contact-container {
-	background-color: red;
-	margin: 0px auto;
+	/*background-color: orange;*/
+	margin: 0 auto;
 	position: absolute;
-	top: 3475px;
-	width: 750px;
+	top: 3375px;
+	left: 0; /* centers the form */
+	right: 0; /* centers the form */
+	width: 720px;
 }
 
-#contact-row {
-	background-color: orange;
+#contact-row-1 {
+	/*background-color: blue;*/
+	display: table;
+	padding-bottom: 15px;
+	width: 100%; /* the length of the row is equal to the size of the container so it takes up the entire container */
+}
+
+.contact-row {
+	/*background-color: blue;*/
 	display: table;
 	margin: 0px auto;
-	width: 750px;
+	width: 100%; /* the length of the row is equal to the size of the container so it takes up the entire container */
+}
+
+#content {
+	/*background-color: green;*/
+	text-align: center; /* centers the header and the text */
+}
+
+#section-row-1-row-content {
+	/*background-color: green;*/
+	padding: 0px 15px; /* adds padding around the text box in the row within the content */
 }
 
 #contact h1 {
-	text-align: center;
+	color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #333;
+
+}
+
+#section-row-1-row-content-text {
+	background-color: rgba(242,242,242,0.4); /* adds a transparent background color behind the text */
+	border-radius: 5px; /* rounds the borders of the <p> */
+	font-size: 16px; /* changes the size of the text */ /**/
+	padding: 20px 15px; /* adds padding around the text */
+}
+
+#section-row-2-column {
+	padding: 0px 15px; /* adds padding to the left and right sides of the inputs */
+}
+
+/* left column */
+#left-column {
+	/*background-color: pink;*/
+	float: left; /* puts the 3 input fields on the left side of the content */ /* both columns must float left */
+	padding-right: 15px; /* puts padding on the right side of the input fields */
+	width: 50%; /* makes the size of the columns take up 50% of the content <div> */ /* this is perfect for (2) column layouts */
+}
+
+/* right column */
+#right-column {
+	/*background-color: pink;*/
+	float: left; /* puts the <textarea> on the right side of the content */ /* both columns must float left */
+	padding-left: 15px; /* puts padding on the right side of the input fields */
+	width: 50%; /* makes the size of the columns take up 50% of the content <div> */ /* this is perfect for (2) column layouts */
+}
+
+.form_control {
+	margin-bottom: 15px; /* adds margins to the bottoms of the input fields and the textarea */
+}
+
+/* controls the input fields in the left column */ /* all (3) input fields have css that they share, requiring a class, and css that they don't, requiring an id */
+
+#name_input{
+	background-color: rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
+	border: none; /* removes the default border around the input field */
+	border-radius: 4px; /* rounds the borders around the input fields */
+	padding: 6px 12px; /* adds padding inside the input field */
+	width: 100%; /* the width of the input field is the full length of the column it in */
+}
+
+#email_input{
+	background-color: rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
+	border: none; /* removes the default border around the input field */
+	border-radius: 4px; /* rounds the borders around the input fields */
+	padding: 6px 12px; /* adds padding inside the input field */
+	width: 100%; /* the width of the input field is the full length of the column it in */
+}
+
+#subject_input{
+	background-color: rgba(242,242,242,0.4); /* adds a transparent background color behind the input field */
+	border: none; /* removes the default border around the input field */
+	border-radius: 4px; /* rounds the borders around the input fields */
+	padding: 6px 12px; /* adds padding inside the input field */
+	width: 100%; /* the width of the input field is the full length of the column it in */
+}
+
+/* controls the <textarea> in the right column */
+
+textarea {
+	background-color: rgba(242,242,242,0.4); /* adds a transparent background color behind the textarea */
+	border: none; /* removes the border around the input field */
+	border-radius: 4px; /* rounds the borders around the input fields */
+	font-size: 14px; /* must be set to 14 for the textarea to match the input fields */
+	padding: 6px 12px; /* adds padding inside the textarea */
+	width: 100%;  /*makes the textarea stretch across the entire right column*/ 
+}
+
+/* controls the button */
+
+#contact_btn {
+	background: #262628; /* colors the button */
+	border: 1px solid #ccc; /* changes the border around the button */
+	border-radius: 10px; /* rounds the default border around the button */
+	color: #fff; /* colors the text of the button */
+	font-size: 18px; /* changes the size of the font of the button */
+	padding: 10px 30px; /* adds padding between the button's text and its border */
+}
+
+#contact_btn:hover{
+	background-color: #fff; /* the color of the button changes when you hover over it */
+	color: #333; /* the color of the button's text changes when you hover over it */
+	cursor: pointer; /* the pointer changes when you hover over the button */
 }
 
 /* footer **************************************************************************************/
@@ -331,6 +444,7 @@ footer {
 }
 
 footer h1 {
+	color: #666;
 	font-size: 32px;
 	font-style: italic;
 	font-weight: 500;
@@ -356,7 +470,6 @@ hr {
 
 #scroll-to-top {
 	cursor: pointer;
-/*	display: none;*/
 	position: fixed; /* fixes the element to the screen */
 	right: 30px; /* the element is fixed to the bottom right of the screen */
 	bottom: 20px; /* the element is fixed to the bottom of the screen */
